@@ -40,27 +40,27 @@ The Costello Deadbolt Detector is an application designed to improve daily secur
 
 ### Technologies 
 
-XCode 
+- XCode 
 
-Best IDE for native IOS development. We have access to an M1 MacBook which will allow us to develop for the Apple platform 
+- Best IDE for native IOS development. We have access to an M1 MacBook which will allow us to develop for the Apple platform 
 
-Raspbian/Raspberry pi 4 
+- Raspbian/Raspberry pi 4 
 
-Raspberry pi will be used in tandem with python to measure the distance between the sensors and the deadbolt to tell if the door is locked or not 
+- Raspberry pi will be used in tandem with python to measure the distance between the sensors and the deadbolt to tell if the door is locked or not 
 
-Proximity Sensor 
+- Proximity Sensor 
 
-Proximity sensor will be used in tandem with the Raspberry Pi to measure the distance of the deadbolt and ping the phone if left unlocked 
+- Proximity sensor will be used in tandem with the Raspberry Pi to measure the distance of the deadbolt and ping the phone if left unlocked 
 
 
 
 
 ### Tools 
 
-GitHub – Version control  
+- GitHub – Version control  
 
-Google Drawings – designing UI 
+- Google Drawings – designing UI 
 
-GitHub issues – Task tracking 
+- GitHub issues – Task tracking 
 
  
