@@ -28,7 +28,7 @@ The Costello Deadbolt Detector is an application designed to improve daily secur
 
 - IOS app notifications when leaving or when the lock is updated (Nick) 
 
-- Reports status of lock (Brendan) 
+- Report status of lock (Brendan) 
 
 ## Technologies and Tools 
 
