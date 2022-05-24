@@ -5,9 +5,9 @@ Team Name: Peterborough Programmers
 
 Team Members: 
 
-Brendan Neary (nearybatwit) – Database Security, Python 
+- Brendan Neary (nearybatwit) – Database Security, Python 
 
-Nick Hale (NickHale1) – App development, Database implementation 
+- Nick Hale (NickHale1) – App development, Database implementation 
 
 Team GitHub repo link:  
 
