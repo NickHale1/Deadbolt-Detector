@@ -1,13 +1,13 @@
 # Deadbolt-Detector
-Project Name: The Costello Deadbolt detector 
+__Project Name:__ The Costello Deadbolt detector 
 
-Team Name: Peterborough Programmers 
+__Team Name:__ Peterborough Programmers 
 
-Team Members: 
+__Team Members:__ 
 
-- Brendan Neary (nearybatwit) – Database Security, Python 
+- Brendan Neary (nearybatwit) – _Database Security, Python_ 
 
-- Nick Hale (NickHale1) – App development, Database implementation 
+- Nick Hale (NickHale1) – _App development, Database implementation_ 
 
 Team GitHub repo link:  
 
