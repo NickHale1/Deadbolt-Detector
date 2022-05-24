@@ -28,15 +28,13 @@ The Costello Deadbolt Detector is an application designed to improve daily secur
 
 ## Functions/Features 
 
-Geolocation tracking of user (Nick) 
+Login authentication/Secure User data Storage (Brendan) 
 
-Login authentication in-app (Brendan) 
+Account Management (Nick) 
 
-Firebase Database (Brendan) 
+IOS app notifications when leaving or when the lock is updated (Nick) 
 
-IOS app (Nick) 
-
-Raspberry pi distance detection (Nick/Brendan) 
+Raspberry pi reports status of lock (Brendan) 
 
 ## Technologies and Tools 
 
