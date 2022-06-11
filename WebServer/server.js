@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res)=> {
     res.json({ message: "Welcome to the deadboltdetector API"});
 });
-
+/*
 const db = require("./app/models");
 const Role = db.role;
 db.mongoose
@@ -64,6 +64,8 @@ function initial() {
   }
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
+*/
+//73.119.139.74:80080
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log('Server is running on port ${PORT}.');
