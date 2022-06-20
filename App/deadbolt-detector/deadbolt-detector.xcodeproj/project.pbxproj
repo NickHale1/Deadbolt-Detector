@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93EA997C2860B49300030697 /* deadbolt_detectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */; };
+		93EA997E2860B49300030697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA997D2860B49300030697 /* ContentView.swift */; };
+		93EA99802860B49500030697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EA997F2860B49500030697 /* Assets.xcassets */; };
+		93EA99832860B49500030697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EA99822860B49500030697 /* Preview Assets.xcassets */; };
+		93EA99852860B49500030697 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA99842860B49500030697 /* Persistence.swift */; };
+		93EA99882860B49500030697 /* deadbolt_detector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93EA99862860B49500030697 /* deadbolt_detector.xcdatamodeld */; };
+		93EA99922860B49500030697 /* deadbolt_detectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA99912860B49500030697 /* deadbolt_detectorTests.swift */; };
+		93EA999C2860B49500030697 /* deadbolt_detectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA999B2860B49500030697 /* deadbolt_detectorUITests.swift */; };
+		93EA999E2860B49500030697 /* deadbolt_detectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA999D2860B49500030697 /* deadbolt_detectorUITestsLaunchTests.swift */; };
+		9A21F3E9E931A63337858C39 /* Pods_deadbolt_detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108B7C4237391114823047A3 /* Pods_deadbolt_detector.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93EA998E2860B49500030697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93EA99702860B49300030697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93EA99772860B49300030697;
+			remoteInfo = "deadbolt-detector";
+		};
+		93EA99982860B49500030697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93EA99702860B49300030697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93EA99772860B49300030697;
+			remoteInfo = "deadbolt-detector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deadbolt-detector.debug.xcconfig"; path = "Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector.debug.xcconfig"; sourceTree = "<group>"; };
+		108B7C4237391114823047A3 /* Pods_deadbolt_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deadbolt_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EA99782860B49300030697 /* deadbolt-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "deadbolt-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorApp.swift; sourceTree = "<group>"; };
+		93EA997D2860B49300030697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93EA997F2860B49500030697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93EA99822860B49500030697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93EA99842860B49500030697 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		93EA99872860B49500030697 /* deadbolt_detector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = deadbolt_detector.xcdatamodel; sourceTree = "<group>"; };
+		93EA998D2860B49500030697 /* deadbolt-detectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "deadbolt-detectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EA99912860B49500030697 /* deadbolt_detectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorTests.swift; sourceTree = "<group>"; };
+		93EA99972860B49500030697 /* deadbolt-detectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "deadbolt-detectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EA999B2860B49500030697 /* deadbolt_detectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorUITests.swift; sourceTree = "<group>"; };
+		93EA999D2860B49500030697 /* deadbolt_detectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7130E571E0E488722AA7677 /* Pods-deadbolt-detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deadbolt-detector.release.xcconfig"; path = "Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93EA99752860B49300030697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A21F3E9E931A63337858C39 /* Pods_deadbolt_detector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA998A2860B49500030697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA99942860B49500030697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E2EE7C6A255C707DFA6E02E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */,
+				B7130E571E0E488722AA7677 /* Pods-deadbolt-detector.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6712CF6774106DC6481EC3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				108B7C4237391114823047A3 /* Pods_deadbolt_detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93EA996F2860B49300030697 = {
+			isa = PBXGroup;
+			children = (
+				93EA997A2860B49300030697 /* deadbolt-detector */,
+				93EA99902860B49500030697 /* deadbolt-detectorTests */,
+				93EA999A2860B49500030697 /* deadbolt-detectorUITests */,
+				93EA99792860B49300030697 /* Products */,
+				5E2EE7C6A255C707DFA6E02E /* Pods */,
+				6712CF6774106DC6481EC3C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93EA99792860B49300030697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93EA99782860B49300030697 /* deadbolt-detector.app */,
+				93EA998D2860B49500030697 /* deadbolt-detectorTests.xctest */,
+				93EA99972860B49500030697 /* deadbolt-detectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93EA997A2860B49300030697 /* deadbolt-detector */ = {
+			isa = PBXGroup;
+			children = (
+				93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */,
+				93EA997D2860B49300030697 /* ContentView.swift */,
+				93EA997F2860B49500030697 /* Assets.xcassets */,
+				93EA99842860B49500030697 /* Persistence.swift */,
+				93EA99862860B49500030697 /* deadbolt_detector.xcdatamodeld */,
+				93EA99812860B49500030697 /* Preview Content */,
+			);
+			path = "deadbolt-detector";
+			sourceTree = "<group>";
+		};
+		93EA99812860B49500030697 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				93EA99822860B49500030697 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93EA99902860B49500030697 /* deadbolt-detectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				93EA99912860B49500030697 /* deadbolt_detectorTests.swift */,
+			);
+			path = "deadbolt-detectorTests";
+			sourceTree = "<group>";
+		};
+		93EA999A2860B49500030697 /* deadbolt-detectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93EA999B2860B49500030697 /* deadbolt_detectorUITests.swift */,
+				93EA999D2860B49500030697 /* deadbolt_detectorUITestsLaunchTests.swift */,
+			);
+			path = "deadbolt-detectorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93EA99772860B49300030697 /* deadbolt-detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EA99A12860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detector" */;
+			buildPhases = (
+				941616C4BC12FA8C99C0FAC7 /* [CP] Check Pods Manifest.lock */,
+				93EA99742860B49300030697 /* Sources */,
+				93EA99752860B49300030697 /* Frameworks */,
+				93EA99762860B49300030697 /* Resources */,
+				6A67A026242451A9C1DDFAF2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "deadbolt-detector";
+			productName = "deadbolt-detector";
+			productReference = 93EA99782860B49300030697 /* deadbolt-detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93EA998C2860B49500030697 /* deadbolt-detectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EA99A42860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detectorTests" */;
+			buildPhases = (
+				93EA99892860B49500030697 /* Sources */,
+				93EA998A2860B49500030697 /* Frameworks */,
+				93EA998B2860B49500030697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EA998F2860B49500030697 /* PBXTargetDependency */,
+			);
+			name = "deadbolt-detectorTests";
+			productName = "deadbolt-detectorTests";
+			productReference = 93EA998D2860B49500030697 /* deadbolt-detectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93EA99962860B49500030697 /* deadbolt-detectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EA99A72860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detectorUITests" */;
+			buildPhases = (
+				93EA99932860B49500030697 /* Sources */,
+				93EA99942860B49500030697 /* Frameworks */,
+				93EA99952860B49500030697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EA99992860B49500030697 /* PBXTargetDependency */,
+			);
+			name = "deadbolt-detectorUITests";
+			productName = "deadbolt-detectorUITests";
+			productReference = 93EA99972860B49500030697 /* deadbolt-detectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93EA99702860B49300030697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					93EA99772860B49300030697 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					93EA998C2860B49500030697 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 93EA99772860B49300030697;
+					};
+					93EA99962860B49500030697 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 93EA99772860B49300030697;
+					};
+				};
+			};
+			buildConfigurationList = 93EA99732860B49300030697 /* Build configuration list for PBXProject "deadbolt-detector" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93EA996F2860B49300030697;
+			productRefGroup = 93EA99792860B49300030697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93EA99772860B49300030697 /* deadbolt-detector */,
+				93EA998C2860B49500030697 /* deadbolt-detectorTests */,
+				93EA99962860B49500030697 /* deadbolt-detectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93EA99762860B49300030697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA99832860B49500030697 /* Preview Assets.xcassets in Resources */,
+				93EA99802860B49500030697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA998B2860B49500030697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA99952860B49500030697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A67A026242451A9C1DDFAF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		941616C4BC12FA8C99C0FAC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deadbolt-detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93EA99742860B49300030697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA99852860B49500030697 /* Persistence.swift in Sources */,
+				93EA997E2860B49300030697 /* ContentView.swift in Sources */,
+				93EA99882860B49500030697 /* deadbolt_detector.xcdatamodeld in Sources */,
+				93EA997C2860B49300030697 /* deadbolt_detectorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA99892860B49500030697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA99922860B49500030697 /* deadbolt_detectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EA99932860B49500030697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA999C2860B49500030697 /* deadbolt_detectorUITests.swift in Sources */,
+				93EA999E2860B49500030697 /* deadbolt_detectorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93EA998F2860B49500030697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93EA99772860B49300030697 /* deadbolt-detector */;
+			targetProxy = 93EA998E2860B49500030697 /* PBXContainerItemProxy */;
+		};
+		93EA99992860B49500030697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93EA99772860B49300030697 /* deadbolt-detector */;
+			targetProxy = 93EA99982860B49500030697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		93EA999F2860B49500030697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93EA99A02860B49500030697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93EA99A22860B49500030697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"deadbolt-detector/Preview Content\"";
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93EA99A32860B49500030697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7130E571E0E488722AA7677 /* Pods-deadbolt-detector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"deadbolt-detector/Preview Content\"";
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93EA99A52860B49500030697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/deadbolt-detector.app/deadbolt-detector";
+			};
+			name = Debug;
+		};
+		93EA99A62860B49500030697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/deadbolt-detector.app/deadbolt-detector";
+			};
+			name = Release;
+		};
+		93EA99A82860B49500030697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "deadbolt-detector";
+			};
+			name = Debug;
+		};
+		93EA99A92860B49500030697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8273PK6VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.deadbolt-detectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "deadbolt-detector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93EA99732860B49300030697 /* Build configuration list for PBXProject "deadbolt-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EA999F2860B49500030697 /* Debug */,
+				93EA99A02860B49500030697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EA99A12860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EA99A22860B49500030697 /* Debug */,
+				93EA99A32860B49500030697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EA99A42860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EA99A52860B49500030697 /* Debug */,
+				93EA99A62860B49500030697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EA99A72860B49500030697 /* Build configuration list for PBXNativeTarget "deadbolt-detectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EA99A82860B49500030697 /* Debug */,
+				93EA99A92860B49500030697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93EA99862860B49500030697 /* deadbolt_detector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93EA99872860B49500030697 /* deadbolt_detector.xcdatamodel */,
+			);
+			currentVersion = 93EA99872860B49500030697 /* deadbolt_detector.xcdatamodel */;
+			path = deadbolt_detector.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93EA99702860B49300030697 /* Project object */;
+}

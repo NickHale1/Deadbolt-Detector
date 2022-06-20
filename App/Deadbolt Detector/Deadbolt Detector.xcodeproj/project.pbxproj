@@ -17,6 +17,13 @@
 		9310FB3C285A5AB500384C37 /* Deadbolt_DetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310FB3B285A5AB500384C37 /* Deadbolt_DetectorTests.swift */; };
 		9310FB46285A5AB500384C37 /* Deadbolt_DetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310FB45285A5AB500384C37 /* Deadbolt_DetectorUITests.swift */; };
 		9310FB48285A5AB500384C37 /* Deadbolt_DetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310FB47285A5AB500384C37 /* Deadbolt_DetectorUITestsLaunchTests.swift */; };
+		93EA99632860A20F00030697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93EA99622860A20F00030697 /* GoogleService-Info.plist */; };
+		93EA99642860A20F00030697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93EA99622860A20F00030697 /* GoogleService-Info.plist */; };
+		93EA99652860A20F00030697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93EA99622860A20F00030697 /* GoogleService-Info.plist */; };
+		93EA99682860A32800030697 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 93EA99672860A32800030697 /* FirebaseAnalytics */; };
+		93EA996A2860A32800030697 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93EA99692860A32800030697 /* FirebaseAuth */; };
+		93EA996C2860A32800030697 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 93EA996B2860A32800030697 /* FirebaseDatabase */; };
+		93EA996E2860A32800030697 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 93EA996D2860A32800030697 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,7 @@
 		9310FB41285A5AB500384C37 /* Deadbolt DetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deadbolt DetectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9310FB45285A5AB500384C37 /* Deadbolt_DetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadbolt_DetectorUITests.swift; sourceTree = "<group>"; };
 		9310FB47285A5AB500384C37 /* Deadbolt_DetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadbolt_DetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93EA99622860A20F00030697 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93EA996C2860A32800030697 /* FirebaseDatabase in Frameworks */,
+				93EA996E2860A32800030697 /* FirebaseFirestore in Frameworks */,
+				93EA99682860A32800030697 /* FirebaseAnalytics in Frameworks */,
+				93EA996A2860A32800030697 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +121,7 @@
 				9310FB2F285A5AB400384C37 /* LaunchScreen.storyboard */,
 				9310FB32285A5AB400384C37 /* Info.plist */,
 				9310FB2A285A5AB200384C37 /* Deadbolt_Detector.xcdatamodeld */,
+				93EA99622860A20F00030697 /* GoogleService-Info.plist */,
 			);
 			path = "Deadbolt Detector";
 			sourceTree = "<group>";
@@ -146,6 +159,12 @@
 			dependencies = (
 			);
 			name = "Deadbolt Detector";
+			packageProductDependencies = (
+				93EA99672860A32800030697 /* FirebaseAnalytics */,
+				93EA99692860A32800030697 /* FirebaseAuth */,
+				93EA996B2860A32800030697 /* FirebaseDatabase */,
+				93EA996D2860A32800030697 /* FirebaseFirestore */,
+			);
 			productName = "Deadbolt Detector";
 			productReference = 9310FB1E285A5AB200384C37 /* Deadbolt Detector.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 9310FB15285A5AB200384C37;
+			packageReferences = (
+				93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9310FB1F285A5AB200384C37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9310FB31285A5AB400384C37 /* LaunchScreen.storyboard in Resources */,
+				93EA99632860A20F00030697 /* GoogleService-Info.plist in Resources */,
 				9310FB2E285A5AB400384C37 /* Assets.xcassets in Resources */,
 				9310FB29285A5AB200384C37 /* Main.storyboard in Resources */,
 			);
@@ -244,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93EA99642860A20F00030697 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93EA99652860A20F00030697 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +631,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93EA99672860A32800030697 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		93EA99692860A32800030697 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		93EA996B2860A32800030697 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		93EA996D2860A32800030697 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93EA99662860A32800030697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9310FB2A285A5AB200384C37 /* Deadbolt_Detector.xcdatamodeld */ = {
