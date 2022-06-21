@@ -22,13 +22,13 @@ The Costello Deadbolt Detector is an application designed to improve daily secur
 
 ## Functions/Features 
 
-- Login authentication/Secure User data Storage (Brendan) 
+- Emergency locking of door (Brendan) 
 
-- Account Management (Nick) 
+- Account Management / Login Authentication (Nick) 
 
-- IOS app notifications when leaving or when the lock is updated (Nick) 
+- Notification if door is unlocked for too long or if you leave the area while unlocked (Nick) 
 
-- Report status of lock (Brendan) 
+- Request current status of lock (Brendan) 
 
 ## Technologies and Tools 
 
