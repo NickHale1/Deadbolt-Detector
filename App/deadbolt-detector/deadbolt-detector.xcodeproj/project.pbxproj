@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939208992860CFB400320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
+		9392089A2860CFB500320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
+		9392089B2860CFB500320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
 		93EA997C2860B49300030697 /* deadbolt_detectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */; };
 		93EA997E2860B49300030697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA997D2860B49300030697 /* ContentView.swift */; };
 		93EA99802860B49500030697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EA997F2860B49500030697 /* Assets.xcassets */; };
@@ -39,6 +42,7 @@
 /* Begin PBXFileReference section */
 		063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deadbolt-detector.debug.xcconfig"; path = "Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector.debug.xcconfig"; sourceTree = "<group>"; };
 		108B7C4237391114823047A3 /* Pods_deadbolt_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deadbolt_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		939208982860CFB400320C2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93EA99782860B49300030697 /* deadbolt-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "deadbolt-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorApp.swift; sourceTree = "<group>"; };
 		93EA997D2860B49300030697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +90,6 @@
 				063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */,
 				B7130E571E0E488722AA7677 /* Pods-deadbolt-detector.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -126,6 +129,7 @@
 				93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */,
 				93EA997D2860B49300030697 /* ContentView.swift */,
 				93EA997F2860B49500030697 /* Assets.xcassets */,
+				939208982860CFB400320C2E /* GoogleService-Info.plist */,
 				93EA99842860B49500030697 /* Persistence.swift */,
 				93EA99862860B49500030697 /* deadbolt_detector.xcdatamodeld */,
 				93EA99812860B49500030697 /* Preview Content */,
@@ -266,6 +270,7 @@
 			files = (
 				93EA99832860B49500030697 /* Preview Assets.xcassets in Resources */,
 				93EA99802860B49500030697 /* Assets.xcassets in Resources */,
+				939208992860CFB400320C2E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9392089A2860CFB500320C2E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9392089B2860CFB500320C2E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
