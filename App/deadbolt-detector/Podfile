@@ -7,6 +7,6 @@ target 'deadbolt-detector' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  
+  pod 'Firebase/Messaging'  
 
 end

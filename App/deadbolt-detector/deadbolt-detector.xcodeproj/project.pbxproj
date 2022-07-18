@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93354C582881E8D1004D6E6A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93354C572881E8D1004D6E6A /* NotificationManager.swift */; };
 		939208992860CFB400320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
 		9392089A2860CFB500320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
 		9392089B2860CFB500320C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939208982860CFB400320C2E /* GoogleService-Info.plist */; };
@@ -42,6 +43,9 @@
 /* Begin PBXFileReference section */
 		063376E69C94C309574239F5 /* Pods-deadbolt-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deadbolt-detector.debug.xcconfig"; path = "Target Support Files/Pods-deadbolt-detector/Pods-deadbolt-detector.debug.xcconfig"; sourceTree = "<group>"; };
 		108B7C4237391114823047A3 /* Pods_deadbolt_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deadbolt_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93354C552881E609004D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93354C562881E617004D6E6A /* deadbolt-detector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "deadbolt-detector.entitlements"; sourceTree = "<group>"; };
+		93354C572881E8D1004D6E6A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		939208982860CFB400320C2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93EA99782860B49300030697 /* deadbolt-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "deadbolt-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadbolt_detectorApp.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		93EA997A2860B49300030697 /* deadbolt-detector */ = {
 			isa = PBXGroup;
 			children = (
+				93354C562881E617004D6E6A /* deadbolt-detector.entitlements */,
+				93354C552881E609004D6E6A /* Info.plist */,
 				93EA997B2860B49300030697 /* deadbolt_detectorApp.swift */,
 				93EA997D2860B49300030697 /* ContentView.swift */,
 				93EA997F2860B49500030697 /* Assets.xcassets */,
@@ -133,6 +139,7 @@
 				93EA99842860B49500030697 /* Persistence.swift */,
 				93EA99862860B49500030697 /* deadbolt_detector.xcdatamodeld */,
 				93EA99812860B49500030697 /* Preview Content */,
+				93354C572881E8D1004D6E6A /* NotificationManager.swift */,
 			);
 			path = "deadbolt-detector";
 			sourceTree = "<group>";
@@ -341,6 +348,7 @@
 			files = (
 				93EA99852860B49500030697 /* Persistence.swift in Sources */,
 				93EA997E2860B49300030697 /* ContentView.swift in Sources */,
+				93354C582881E8D1004D6E6A /* NotificationManager.swift in Sources */,
 				93EA99882860B49500030697 /* deadbolt_detector.xcdatamodeld in Sources */,
 				93EA997C2860B49300030697 /* deadbolt_detectorApp.swift in Sources */,
 			);
@@ -499,12 +507,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "deadbolt-detector/deadbolt-detector.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"deadbolt-detector/Preview Content\"";
 				DEVELOPMENT_TEAM = P8273PK6VN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "deadbolt-detector/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -531,12 +541,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "deadbolt-detector/deadbolt-detector.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"deadbolt-detector/Preview Content\"";
 				DEVELOPMENT_TEAM = P8273PK6VN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "deadbolt-detector/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
