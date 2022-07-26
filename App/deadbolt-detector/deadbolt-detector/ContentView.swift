@@ -118,9 +118,38 @@ func getStatus() -> String {
 
 struct detector: Codable {
     let status:Bool
+    let flag:Bool
+}
+struct RequestLocationView: View {
+    var body: some View {
+        ZStack{
+            Color(.systemCyan).ignoresSafeArea()
+            
+            VStack{
+                Image(systemName: "paperplane.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 250, height: 250)
+                    .padding(.bottom, 40)
+                
+                Button{
+                    LocationManager.shared.requestLocation()
+                }label: {
+                    Text("Allow Location")
+                        .padding()
+                }
+                .frame(width: UIScreen.main.bounds.width)
+                .padding(.horizontal, -32)
+                .background(Color.white)
+                
+            }
+        }
+        
+    }
 }
 
 struct ContentView: View {
+    @ObservedObject var locationManager = LocationManager.shared
     
     let url = "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json"
     @StateObject var apiMan = APIRequestManager()
@@ -130,6 +159,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             if viewModel.signedIn {
+                if(locationManager.userLocation==nil){
+                    RequestLocationView()
+                } else {
+                    
+                
                 VStack{
                     Section("My Lock") {
                         Text(apiMan.result)
@@ -146,6 +180,7 @@ struct ContentView: View {
                     }, label: {
                         Text("Sign Out").frame(width: 200, height: 50).background(Color.blue).cornerRadius(8).foregroundColor(Color.white).padding()
                     })
+                }
                 }
             } else {
                 SignInView()
