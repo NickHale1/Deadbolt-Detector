@@ -27,8 +27,9 @@ struct deadbolt_detectorApp: App {
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    @StateObject var apiCalls = NotificationAPIRequestManager()
+    @StateObject var apiCalls = APIRequestManager()
     let gcmMessageIDKey = "gcm.message_id"
+    var myFlag = "nil"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
@@ -148,7 +149,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                               withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
                                 -> Void) {
     let userInfo = notification.request.content.userInfo
-      
+      print(notification.request)
       
       print(notification.request.content)
 
@@ -168,30 +169,55 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
       print("!!!!!!!!!!!!!!!Keys!!!!!!!!!!!!!!!")
       print(userInfo.keys)
       print(userInfo)
-      
+      print("testforlocal")
+      print(notification.request.content.title)
+      if(notification.request.content.title=="Did you forget to lock your door?"){
+          completionHandler([[.banner, .badge, .sound]])
+      }
+     
       if let info = userInfo["aps"] as? NSDictionary{
           if let data = info["alert"] as? [String: String]{
               print(data["body"]!)
-              if(data["body"]=="5 Minute Check"){
-                  //if we confirm it is a 5 minute check notification then we need to check the database for the left unlocked flag
-                  apiCalls.getData(myURL: "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json")
-                  
-                  if(apiCalls.timeFlag){
-                      completionHandler([[.banner, .badge, .sound]])
+              if(data["title"]=="Don't forget to lock your door!"){
+                  var result = "nil"
+                  let inputURL = "https://deadbolt-detector-default-rtdb.firebaseio.com/Flags/12345.json"
+                  guard let url = URL(string: inputURL) else {
+                      print("invaludURL")
+                      return
                   }
-                  
-                  /* If database says unlocked for a while
-                        send out the notification with completion handler
-                     Else
-                        Don't send the notification
-                   
-                   */
-                  // If the lock is found to have been open for more than 5 minutes then send the notification
+                  URLSession.shared.dataTask(with: url) {
+                      (data,response,error) in
+                      guard let data = data else {
+                          print("could not get data")
+                          DispatchQueue.main.async {
+                              result = "could not get data"
+                          }
+                          return
+                      }
+                      do {
+                          let myresult = try JSONDecoder().decode(detector.self, from:data)
+                          DispatchQueue.main.async {
+                              print(myresult)
+                              if(myresult.status==true){
+                                  print("reached here")
+                                  result="flag is up"
+                                  completionHandler([[.banner, .badge, .sound]])
+                                  print(result)
+                              }else {
+                                  print("reached flag down")
+                                  result="flag is down"
+                              }
+                          }
+                      } catch {
+                          DispatchQueue.main.async {
+                              print("\(error)")
+                          }
+                      }
+                      
+                  }
+                  .resume()
+                 
 
-              } else if(data["body"]=="Location Check") {
-                  //Call the location service to get a general location
-                  //determine location relative to home
-                  //send the notification if far from home with the door unlocked
               }
           }
       }
@@ -217,51 +243,4 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 }
 
 
-class NotificationAPIRequestManager: ObservableObject {
-    private let key = "54324"
-    
-    @Published var result = "Unlocked"
-    @Published var timeFlag = false
-    @Published var resultBool=false
-    @Published var inputURL = "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json"
-    
-    func getData(myURL: String) {
-        guard let url = URL(string: inputURL) else {
-            print("invaludURL")
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) {
-            (data,response,error) in
-            guard let data = data else {
-                print("could not get data")
-                DispatchQueue.main.async {
-                    self.result = "could not get data"
-                }
-                return
-            }
-            do {
-                let myresult = try JSONDecoder().decode(detector.self, from:data)
-                DispatchQueue.main.async {
-                    print(myresult)
-                    if(myresult.status==true){
-                        self.result="Locked"
-                    } else {
-                        self.result="Unlocked"
-                    }
-                    if(myresult.flag==true){
-                        self.timeFlag=true
-                    }else {
-                        self.timeFlag=false
-                    }
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    print("\(error)")
-                }
-            }
-            
-        }
-        .resume()
-    }
-}
+

@@ -73,7 +73,9 @@ class APIRequestManager: ObservableObject {
     private let key = "54324"
     
     @Published var result = "Unlocked"
+    @Published var timeFlag = false
     @Published var resultBool=false
+    @Published var imageName = "lock.open.fill"
     @Published var inputURL = "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json"
     
     func getData() {
@@ -97,8 +99,10 @@ class APIRequestManager: ObservableObject {
                     print(myresult)
                     if(myresult.status==true){
                         self.result="Locked"
+                        self.imageName="lock.fill"
                     } else {
                         self.result="Unlocked"
+                        self.imageName="lock.open.fill"
                     }
                 }
             } catch {
@@ -118,7 +122,6 @@ func getStatus() -> String {
 
 struct detector: Codable {
     let status:Bool
-    let flag:Bool
 }
 struct RequestLocationView: View {
     var body: some View {
@@ -153,10 +156,13 @@ struct ContentView: View {
     
     let url = "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json"
     @StateObject var apiMan = APIRequestManager()
+   
     @EnvironmentObject var viewModel: AppViewModel
+    //@Published var test = "Logo"
     @State var status = "Locked"
     
     var body: some View {
+       
         NavigationView{
             if viewModel.signedIn {
                 if(locationManager.userLocation==nil){
@@ -165,11 +171,35 @@ struct ContentView: View {
                     
                 
                 VStack{
-                    Section("My Lock") {
-                        Text(apiMan.result)
+                    Section() {
+                        Image(systemName: apiMan.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150,height: 150)
+                            .padding(.bottom, 40)
+                        
+                        Text("Update")
+                            .font(.system(size:24))
                         Button(action: {
                             apiMan.result="Checking your lock..."
                             apiMan.getData()
+                            
+                            print(LocationManager.shared.userLocation)
+                            /*
+                            let content = UNMutableNotificationContent()
+                            content.title = "Feed the cat"
+                            content.subtitle = "It looks hungry"
+                            content.sound = UNNotificationSound.default
+
+                            // show this notification five seconds from now
+                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+                            // choose a random identifier
+                            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+                            // add our notification request
+                            UNUserNotificationCenter.current().add(request)
+                             */
                         }, label: {
                             Text("Update").frame(width: 200, height: 50).background(Color.blue).cornerRadius(8).foregroundColor(Color.white).padding()
                         })
@@ -201,10 +231,12 @@ struct ResetPasswordView: View {
     var body: some View {
         
         VStack{
-            Image("Logo")
+            Image(systemName: "lock.shield")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
+                .padding(.bottom,40)
+                .padding(.top,40)
             VStack {
                 TextField("Email Address", text:$email)
                     .disableAutocorrection(true)
@@ -242,10 +274,12 @@ struct SignInView: View {
     var body: some View {
         
         VStack{
-            Image("Logo")
+            Image(systemName: "lock.shield")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
+                .padding(.bottom,40)
+                .padding(.top,40)
             VStack {
                 TextField("Email Address", text:$email)
                     .disableAutocorrection(true)
@@ -304,10 +338,12 @@ struct SignUpView: View {
     var body: some View {
         
         VStack{
-            Image("Logo")
+            Image(systemName: "lock.shield")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
+                .padding(.bottom,40)
+                .padding(.top,40)
             VStack {
                 TextField("Email Address", text:$email)
                     .disableAutocorrection(true)

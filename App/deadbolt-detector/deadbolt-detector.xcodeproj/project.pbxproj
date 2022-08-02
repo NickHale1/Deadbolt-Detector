@@ -515,7 +515,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "deadbolt-detector/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow us to use the location";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please Allow us to use your location to send notifications while away from your home";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location for notifications";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -550,7 +551,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "deadbolt-detector/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow us to use the location";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please Allow us to use your location to send notifications while away from your home";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location for notifications";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
