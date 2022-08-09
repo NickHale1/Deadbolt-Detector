@@ -11,6 +11,8 @@ __Team Members:__
 
 __Team GitHub repo link:__ https://github.com/NickHale1/Deadbolt-Detector 
 
+__Demonstration Video:__ https://www.youtube.com/watch?v=xutpqA8ZPVs
+
 
 
 ## Introduction 
