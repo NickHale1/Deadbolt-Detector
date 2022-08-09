@@ -27,6 +27,7 @@ struct deadbolt_detectorApp: App {
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    @EnvironmentObject var viewModel: AppViewModel
     @StateObject var apiCalls = APIRequestManager()
     let gcmMessageIDKey = "gcm.message_id"
     var myFlag = "nil"
@@ -201,7 +202,10 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                               if(myresult.status==true){
                                   print("reached here")
                                   result="flag is up"
-                                  completionHandler([[.banner, .badge, .sound]])
+                                  if(self.viewModel.flagNotifications) {
+                                      completionHandler([[.banner, .badge, .sound]])
+                                  }
+                                  
                                   print(result)
                               }else {
                                   print("reached flag down")

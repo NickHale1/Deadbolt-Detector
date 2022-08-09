@@ -14,6 +14,12 @@ class LocationManager: NSObject, ObservableObject {
     private let manager = CLLocationManager()
     private var alreadyBreached = false
     @Published var userLocation: CLLocation?
+    var locationNotifications = true
+    
+    func updateNotifications() {
+        self.locationNotifications = !self.locationNotifications
+    }
+    
     static let shared = LocationManager()
     
     override init() {
@@ -67,7 +73,8 @@ extension LocationManager: CLLocationManagerDelegate {
         let distanceThreshold = 20.0 // meters
         
         //if you are more than 20 meters from the home location and this is the first time you've breached the barrier since you've left
-        if(location.distance(from: homeLocation) > distanceThreshold && !alreadyBreached){
+       
+        if(location.distance(from: homeLocation) > distanceThreshold && !alreadyBreached && locationNotifications){
             
             //make an API request to the detector
             let inputURL = "https://deadbolt-detector-default-rtdb.firebaseio.com/Detectors/12345.json"

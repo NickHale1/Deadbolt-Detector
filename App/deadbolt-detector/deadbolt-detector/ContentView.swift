@@ -18,13 +18,16 @@ class AppViewModel: ObservableObject{
     var isSignedIn: Bool {
         return auth.currentUser != nil
     }
+    @Published var errorText = ""
+    @Published var flagNotifications = true
+    @Published var locationNotifications = true
     
     // Sign in function
     func signIn(email: String, password: String){
         auth.signIn(withEmail: email, password: password) { [weak self]
             result, error in
             guard result != nil, error == nil else {
-
+                self?.errorText = "Account not Found"
                 return
             }
             //success
@@ -35,12 +38,23 @@ class AppViewModel: ObservableObject{
 
         }
     }
+    
+    func toggleFlag() {
+        self.flagNotifications = !self.flagNotifications
+    }
+    
+    func toggleLocation() {
+        self.locationNotifications = !self.locationNotifications
+        LocationManager.shared.updateNotifications()
+    }
     // Reset password function
     func resetPassword(email: String){
         auth.sendPasswordReset(withEmail: email){ (error) in
             if let error=error {
+                self.errorText="Account not Found"
                 return
             }
+            self.errorText="Password reset sent, please check you email"
      
         }
     }
@@ -49,7 +63,9 @@ class AppViewModel: ObservableObject{
     func signUp(email: String, password: String){
         auth.createUser(withEmail: email, password: password) { [weak self] result, error in
             guard result != nil, error == nil else {
+                self?.errorText = "Please enter a valid email and password (8 characters)"
                 return
+                
             }
             //success
             DispatchQueue.main.async {
@@ -179,7 +195,7 @@ struct ContentView: View {
                             .frame(width: 150,height: 150)
                             .padding(.bottom, 40)
                         // Update button
-                        Text("Update")
+                        Text(apiMan.result)
                             .font(.system(size:24))
                         Button(action: {
                             apiMan.result="Checking your lock..."
@@ -198,6 +214,8 @@ struct ContentView: View {
                     }, label: {
                         Text("Sign Out").frame(width: 200, height: 50).background(Color.blue).cornerRadius(8).foregroundColor(Color.white).padding()
                     })
+                    Spacer()
+                    NavigationLink("More", destination: settingsView()).padding()
                 }
                 }
                 // If not signed in
@@ -206,7 +224,7 @@ struct ContentView: View {
                 SignInView()
             }
         }.onAppear{
-            //checks the signed in status
+            viewModel.errorText=""
             viewModel.signedIn=viewModel.isSignedIn
         }
     }
@@ -237,6 +255,8 @@ struct ResetPasswordView: View {
                     .padding()
                     .background(Color(.secondarySystemBackground))
                 Text("").padding()
+                
+                Text(viewModel.errorText).padding()
                 // Submit password reset request
                 Button(action: {
                     guard !email.isEmpty else{
@@ -254,6 +274,9 @@ struct ResetPasswordView: View {
             Spacer()
             
         }.navigationTitle("Reset Password")
+            .onAppear{
+                viewModel.errorText=""
+            }
         
     }
 }
@@ -300,6 +323,7 @@ struct SignInView: View {
                 }, label: {
                     Text("Sign In").frame(width: 200, height: 50).background(Color.blue).cornerRadius(8).foregroundColor(Color.white)
                 })
+                Text(viewModel.errorText).padding()
                 // Link to create account page
                 NavigationLink("Create Account", destination: SignUpView()).padding()
                 // Link to reset password page
@@ -310,7 +334,43 @@ struct SignInView: View {
             Spacer()
             
         }.navigationTitle("Sign In")
+            .onAppear{
+                viewModel.errorText=""
+            }
         
+    }
+}
+
+struct settingsView: View {
+    
+    @EnvironmentObject var viewModel: AppViewModel
+    var body: some View {
+        VStack{
+            Button(action: {
+                viewModel.toggleFlag()
+                
+                
+            }, label: {
+                if(viewModel.flagNotifications){
+                    Text("Unlocked door notifications on")
+                }else {
+                    Text("Unlocked door notifications off")
+                }
+            }).padding()
+            
+            Button(action: {
+                viewModel.toggleLocation()
+                
+                
+            }, label: {
+                if(viewModel.locationNotifications){
+                    Text("Location notifications on")
+                } else {
+                    Text("Location notifications off")
+                }
+            }).padding()
+            
+        }.navigationTitle("Settings")
     }
 }
 
@@ -346,6 +406,7 @@ struct SignUpView: View {
                     .padding()
                     .background(Color(.secondarySystemBackground))
                 
+                Text(viewModel.errorText).padding()
                 // submit button
                 Button(action: {
                     guard !email.isEmpty, !password.isEmpty else {
@@ -363,6 +424,9 @@ struct SignUpView: View {
             Spacer()
             
         }.navigationTitle("Create Account")
+            .onAppear{
+                viewModel.errorText=""
+            }
         
     }
 }
