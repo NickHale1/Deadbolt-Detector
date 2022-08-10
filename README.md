@@ -13,7 +13,7 @@ __Team GitHub repo link:__ https://github.com/NickHale1/Deadbolt-Detector
 
 __Demonstration Video:__ https://www.youtube.com/watch?v=xutpqA8ZPVs
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xutpqA8ZPVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction 
 
